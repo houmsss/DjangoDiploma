@@ -24,5 +24,28 @@
   <div class='light x8'></div>
   <div class='light x9'></div>
 
+<div class = "selwrapper">
+    <p>Figure
+    <Select class = "sel" id = "sel">
+        {% for f in figures %}
+        <option value="{{f.name}}">{{f.name}}</option>
+        {% endfor %}
+    </Select>
+        </p>
+    <p> Size
+        <Select class = "sel" >
+
+    </Select>
+    </p>
+    <script>
+        function get3dPage() {
+        var select = document.getElementById("sel");
+        var value = select.value;
+        window.open('/tests?name='+value, '_blank');
+        }
+    </script>
+    <button onClick = "get3dPage()"> Сделать красиво </button>
+
+</div>
 </body>
 </html>

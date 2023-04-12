@@ -12,6 +12,23 @@ body {
     -o-animation: fadeIn 1 1s ease-out;
     animation: fadeIn 1 1s ease-out;
 }
+
+.selwrapper {
+  width: 20%;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+  background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+  font-size:2em;
+  margin:1%;
+}
+
+.sel {
+margin: 3%;
+padding: 3%
+}
+
+
 #navbar {
   margin: 0;
   padding: 0;
