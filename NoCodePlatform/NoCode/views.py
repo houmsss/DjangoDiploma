@@ -1,10 +1,7 @@
-
 from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import render
 from pylenium.scripts.conftest import py
-
 from NoCode.models import *
-
 from NoCode.static.NoCode.PyScripts.test import testmetricks
 
 def index(request):
@@ -18,7 +15,6 @@ def ThirdDimension(request):
         return render(request, 'NoCode/3d.html', third)
     else:
         return render(request, 'NoCode/3d.html')
-
 
 def report(request):
     if request.GET:
@@ -36,3 +32,6 @@ def report(request):
 
 def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1>Страница не найдена</h1>')
+
+
+
