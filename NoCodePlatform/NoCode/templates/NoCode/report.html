@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Performance report</title>
+    <link type = 'text/css' href = "{% static 'NoCode/css/styles.css'%}" rel="stylesheet">
+    <style>
+        table {
+        width: 50%;
+        padding: 5px;
+        margin: auto;
+        text-align:center;
+        font-size:14pt;
+        }
+
+    </style>
+</head>
+<body>
+
+<table border = 1 align="center">
+    <tr>
+        <td colspan="2">Страница без 3D-контента</td>
+        <td colspan="2">Страница с 3D-контентом</td>
+    </tr>
+    {% for r in result%}
+    <tr>
+        {%for l in r%}
+            <td>{{l}}</td>
+        {%endfor%}
+    </tr>
+    {%endfor%}
+</table>
+<table>
+    <tr>
+        <td><button class = "btn-class">Preview</button></td>
+        <td><button class = "btn-class">Preview</button></td>
+    </tr>
+</table>
+
+</body>
+</html>

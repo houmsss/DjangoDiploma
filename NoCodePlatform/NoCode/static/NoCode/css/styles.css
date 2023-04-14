@@ -25,9 +25,37 @@ body {
 
 .sel {
 margin: 3%;
-padding: 3%
+padding: 3%;
+font-size:1em;
 }
 
+.btn-class{
+ display: inline-block;
+ margin-left:70%;
+ border:3px solid #C9AE34;
+ color: #E0E0E0;
+ border-radius: 3px 3px 3px 3px;
+ -webkit-border-radius: 3px 3px 3px 3px;
+ -moz-border-radius: 3px 3px 3px 3px;
+ font-family: Verdana;
+ width: auto;
+ height: auto;
+ font-size: 16px;
+ padding: 10px 40px;
+ box-shadow: inset 0 1px 0 0 #CE2EFF,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+ -moz-box-shadow: inset 0 1px 0 0 #CE2EFF,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+ -webkit-box-shadow: inset 0 1px 0 0 #CE2EFF,inset 0 -1px 0 0 #E3C852,inset 0 0 0 1px #FCE88D,0 2px 4px 0 #D4D4D4;
+ background-image: linear-gradient(to top, #5044FC, #51FCF6);
+ background-color: #AD37FC;
+}
+.btn-class:hover, .btn-class:active{
+ border:3px solid #4E3C96;
+ color: #705D07;
+ box-shadow: inset 0 1px 0 0 #80A6FF,inset 0 -1px 0 0 #BE7DE3,inset 0 0 0 1px #714EFC;
+ -moz-box-shadow: inset 0 1px 0 0 #80A6FF,inset 0 -1px 0 0 #BE7DE3,inset 0 0 0 1px #714EFC;
+ -webkit-box-shadow: inset 0 1px 0 0 #80A6FF,inset 0 -1px 0 0 #BE7DE3,inset 0 0 0 1px #714EFC;
+ background-color: #FCDF5B;
+}
 
 #navbar {
   margin: 0;

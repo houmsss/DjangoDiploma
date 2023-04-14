@@ -6,5 +6,6 @@ from .views import *
 urlpatterns = [
     path('', index),
     path('tests', ThirdDimension),
+    path('report', report),
 ]
 

@@ -32,19 +32,16 @@
         {% endfor %}
     </Select>
         </p>
-    <p> Size
-        <Select class = "sel" >
-
-    </Select>
     </p>
     <script>
         function get3dPage() {
         var select = document.getElementById("sel");
-        var value = select.value;
-        window.open('/tests?name='+value, '_blank');
+        const dlink = 'tests?name='+select.value;
+        const link = 'tests';
+        window.open('/report?dlink='+dlink+'&link='+link, '_blank');
         }
     </script>
-    <button onClick = "get3dPage()"> Сделать красиво </button>
+    <button onClick = "get3dPage()" class = "btn-class"> Test </button>
 
 </div>
 </body>
