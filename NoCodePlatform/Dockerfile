@@ -5,7 +5,7 @@ WORKDIR /main
 RUN pip install --upgrade pip
 COPY requirements.txt /main/
 
-RUN pip install -r requrements.txt
+RUN pip install -r requirements.txt
 COPY . /main/
 
 
