@@ -1,6 +1,5 @@
 from django.http import HttpResponse, HttpResponseNotFound
 from django.shortcuts import render
-from pylenium.scripts.conftest import py
 from NoCode.models import *
 from NoCode.static.NoCode.PyScripts.test import testmetricks
 
